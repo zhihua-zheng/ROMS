@@ -369,6 +369,8 @@
         real(r8) :: rhow = 1000.0_r8            ! kg/m3
 #ifdef SOLITON
         real(r8) :: g = 1.0_r8                  ! non-dimensional
+# elif defined CIRCLE
+        real(r8) :: g = 3.92e-2_r8              ! m/s2
 #else
         real(r8) :: g = 9.81_r8                 ! m/s2
 #endif

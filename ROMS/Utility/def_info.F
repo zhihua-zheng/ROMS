@@ -1,4 +1,7 @@
 #include "cppdefs.h"
+#if defined CIRCLE_POLAR || defined CIRCLE_ROUND
+# define CURVGRID
+#endif
       SUBROUTINE def_info (ng, model, ncid, ncname, DimIDs)
 !
 !svn $Id$
